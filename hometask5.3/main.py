@@ -1,6 +1,6 @@
 import re
-"""
-num = int(input("How many strings would you enter: "))
+
+num = int(input("How many strings would you enter (from 1 to 9): "))
 
 if 1 > num:
     exit(["Not enough"])
@@ -11,21 +11,9 @@ txt = ""
 
 for i in range(0, num):
     txt += str(input()) + " "
-"""
-
-txt = """hi
-hi
-what is your name
-my name is bond
-james bond
-my name is damme
-van damme
-claude van damme
-jean claude van damme"""
-
 
 raw = re.split(r'\W+', txt)
-#raw.remove("")
+raw.remove("")
 thedict = {
 }
 
